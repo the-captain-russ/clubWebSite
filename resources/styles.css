@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+body {
+    background-color:dimgray;
+    text-align: center;
+}
+
+header {
+    grid-area: 1 / 1 / span 2 / span 12;
+}
+
+h2, h1 {
+    background-color: black;
+    color: white;
+}
+
+.img-container {
+    display: inline-flex;
+    text-align: center;
+    padding: 2rem 2rem;
+    height: auto;
+    max-width: 100%;
+}
+
+.info-card img {
+    height: auto;
+    max-width: 100%;
+}
+
+.info-card {
+    padding: .5rem .5rem;
+    margin: 0 1rem;
+
+}
+
+#about {
+
+}
+
+#pictures {
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+}
