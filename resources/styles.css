@@ -1,6 +1,6 @@
 .grid {
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    /*display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;*/
     justify-content: space-around;
 }
 
@@ -9,9 +9,22 @@ body {
     text-align: center;
 }
 
-header {
-    grid-area: 1 / 1 / span 2 / span 12;
+#main-header {
+    padding: 2rem 0rem;
 }
+
+nav {
+    background-color: antiquewhite;
+}
+
+nav a:link {
+    color: grey;
+}
+
+nav a:hover {
+    color: red;
+}
+
 
 h2, h1 {
     background-color: black;
@@ -37,12 +50,36 @@ h2, h1 {
 
 }
 
-#about {
-
+#about header {
+    background-image: url("../resources/images/dart-board-3-bulls.jpeg");
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #pictures {
     display: inline-flex;
     flex-direction: column;
     justify-items: center;
+}
+
+#quotes h5 {
+    font-family: Comforter;
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
 }

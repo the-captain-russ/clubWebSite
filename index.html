@@ -9,7 +9,7 @@
     </head>
     <body>
     <div class="grid">
-        <header>
+        <header id="main-header">
             <h1>Welcome to the Dart Room</h1>
             <nav>
                 <a href="#pictures">pictures</a>
@@ -18,8 +18,10 @@
             </nav>
         </header>
         <section id="about">
-            <h2>About The Dart Room</h2>
-            <p>Established 1992 by Ray Shank</p>
+            <header>
+                <h2>About The Dart Room</h2>
+                <p>Established 1992 by Ray Shank</p>
+            </header>
             <div class="img-container">
                 <div class="info-card a">
                     <h3>Razor</h3>
@@ -52,31 +54,36 @@
                 </div>
             </div>
         </section>
+        <section id="beers">
+            <h2>The Beers</h2>
+            <div class="img-container">
+                <div class="info-card">
+                    <p>On the bar</p>
+                    <img src="./resources/images/beers-on-the-bar.jpeg">
+                </div>
+                <div class="info-card">
+                    <p>Enjoyed best with friends</p>
+                    <img src="./resources/images/cheers.jpeg">
+                </div>
+                <div clss="info-card">
+                    <p>From the Tap</p>
+                    <img src="./resources/images/beer-from-the-tap.jpeg">
+                </div>
+            </div>
+        </section>
         <section id="quotes">
             <h2>Famous quotes</h2>
             <div>
-                <p>This is one quote from the dart room</p>
+                <h5>This is one quote from the dart room</h5>
                 <p>quoted by:</p>
                 <p>on date: Jan 1, 2011</p>
             </div>
         </section>
-        <section id="beers">
-            <h2>The Beers</h2>
-            <div class="img-grid">
-                <div class="info-card">
-                    <p>beer 1</p>
-                    <img src="">
-                </div>
-                <div class="info-card">
-                    <p>beer 2</p>
-                    <img src="">
-                </div>
-                <div clss="info-card">
-                    <p>beer 3</p>
-                    <img src="">
-                </div>
-            </div>
-        </section>
+        <footer>
+            <h6>Find Us:</h6>
+            <p>Address: 6223 Hill Shore Road, Dayton, VA</p>
+            <img src="./resources/images/dart-room-map.png">
+        </footer>
     </div>
     </body>
 </html>
